@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Alheri Power Solutions | Solar Energy in Nigeria</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Alheri Power Solutions provides reliable solar system design, sales, installation, and maintenance across Nigeria. Power your home and business sustainably." />
+  <meta name="keywords" content="solar energy Nigeria, solar installation, inverters, batteries, solar panels, renewable energy, Alheri Power Solutions" />
+  <meta name="author" content="Alheri Power Solutions" />
+
+  <!-- Open Graph (Facebook/WhatsApp) -->
+  <meta property="og:title" content="Alheri Power Solutions - Reliable Solar Energy in Nigeria" />
+  <meta property="og:description" content="We specialize in solar system design, sales, installation, and maintenance. Get sustainable and affordable energy solutions today." />
+  <meta property="og:image" content="https://yourdomain.com/Home.jpg" />
+  <meta property="og:url" content="https://yourdomain.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Alheri Power Solutions - Reliable Solar Energy in Nigeria" />
+  <meta name="twitter:description" content="Professional solar design, sales, and installation across Nigeria." />
+  <meta name="twitter:image" content="https://yourdomain.com/Home.jpg" />
+
+  <style>
+    /* keep your CSS here */
+  </style>
+</head>8
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #024f2d;
+      color: #fff;
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logotext {
+      font-family: cursive;
+      font-size: 18pt;
+      color: yellow;
+    }
+
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.8em;
+      cursor: pointer;
+    }
+
+    nav {
+      display: flex;
+      gap: 1em;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1em;
+      }
+
+      nav.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+    /* Slider */
+    .slider {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      .slider {
+        height: 250px;
+      }
+    }
+
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      animation: fade 25s infinite;
+    }
+
+.slide:nth-child(1) {
+  background-image: url('Home.jpg');
+  animation-delay: 1s;
+}
+    .slide:nth-child(2) {
+      background-image: url('Installer.jpg');
+      animation-delay: 5s;
+    }
+
+    .slide:nth-child(3) {
+      background-image: url('Battery.jpg');
+      animation-delay: 10s;
+    }
+
+    .slide:nth-child(4) {
+      background-image: url("Maintainer.jpg");
+      animation-delay: 15s;
+    }
+
+    .slide:nth-child(5) {
+      background-image: url('Logo.jpg');
+      animation-delay: 20s;
+    }
+
+    @keyframes fade {
+      0%, 100% { opacity: 0; }
+      10%, 25% { opacity: 1; }
+      30%, 90% { opacity: 0; }
+    }
+
+    .text-overlay {
+      position: absolute;
+      bottom: 20%;
+      left: 10%;
+      right: 10%;
+      text-align: center;
+      color: #fff;
+      font-size: 2em;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 0.5em 1em;
+      border-radius: 10px;
+      font-weight: bold;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @media (max-width: 768px) {
+      .text-overlay {
+        font-size: 1.2em;
+        padding: 0.3em;
+        bottom: 10%;
+      }
+      
+.slide:nth-child(1) {l
+  animation-delay: 0s;
+}
+      
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    section {
+      padding: 2em;
+      text-align: center;
+    }
+
+    h1, h2 {
+      color: #024f2d;
+      margin-bottom: 0.5em;
+    }
+
+    h3 {
+      color: #024f2d;
+    }
+
+    .cta a, .button {
+      display: inline-block;
+      margin: 0.5em;
+      padding: 0.8em 1.5em;
+      background-color: #024f2d;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .services, .contact-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+    }
+
+    .service, .contact-button {
+      background: white;
+      padding: 1em;
+      border-radius: 8px;
+      flex: 1 1 300px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      max-width: 350px;
+    }
+
+    .service img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px 8px 0 0;
+    }
+
+    footer {
+      background-color: #024f2d;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+
+    footer a {
+      color: yellow;
+      text-decoration: underline;
+    }
+  </style>
+<body>
+
+  <!-- Slider -->
+  <div class="slider">
+    <div class="slide"><div class="text-overlay">Powering Nigeria with Reliable Solar Solutions</div></div>
+    <div class="slide"><div class="text-overlay">Professional Design & Installation Services</div></div>
+    <div class="slide"><div class="text-overlay">Top Quality Solar Panels, Inverters & Batteries</div></div>
+    <div class="slide"><div class="text-overlay">Support, Maintenance & After-Sales Guarantee</div></div>
+    <div class="slide"><div class="text-overlay">For a Steady Power Supply – Go Solar with – Alheri Power Solutions</div></div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <span class="logotext">Alheri Power</span>
+    <div class="menu-toggle">☰</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home">
+    <h2>Welcome to Alheri Power Solutions</h2>
+    <p>We specialize in solar system design, sales, and professional installation to ensure sustainable, affordable energy solutions across Nigeria.</p>
+    <div class="cta">
+      <a href="https://wa.me/2348060722263">Get a Quote</a>
+      <a href="mailto:alheripower@gmail.com">Send Email</a>
+      <a href="tel:+2348060722263">Call Us</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <img src="Home.jpg" />
+        <h3>Solar System Design & Installation</h3>
+        <p>We assess your energy needs, design efficient solar systems, and handle full installations for homes and businesses.</p>
+        
+<p><strong>Ready to power up your home sustainably with solar power? Call us today to get a quote! </strong></p>
+        <a class="button" href="tel:+2348060722263">Call Us Now</a>
+      </div>
+      <div class="service">
+        <img src="Panel.jpg"/>
+        <h3>Sales and Supply of Solar System Components and DC Apliances</h3>
+        <p>We supply high-quality solar panels, inverters, charge controllers, batteries and a wide range of Solar powered/DC appliances from trusted brands at competitive prices.</p>
+        <p><strong>Get premium solar products now to your door steps with one simple call.</strong></p>
+  
+        <a class="button" href="tel:+2348060722263">Call Us Now</a>
+      </div>
+      <div class="service">
+        <img src="Maintainer.jpg" />
+        <h3>Maintenance & Support</h3>
+        <p>Enjoy peace of mind with our after-sales services including routine checks, repairs, and system upgrades.</p>
+        
+        <p><strong>Your system deserves expert care. Call us today to schedule a check or upgrade.</strong></p>
+        
+        <a class="button" href="tel:+2348060722263">Call Us Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Alheri Power Solutions was founded with the mission to make clean energy accessible to everyone. Our experienced team is committed to reliable service and customer satisfaction.</p>
+    <img src="Team.jpg" alt="Team Image" style="max-width:300px; border-radius:10px;" />
+    <p><strong>Customer Testimonials:</strong> 
+ Coming Soon... </p>
+  </section>
+  <!-- Location -->
+  
+  <section id="location">
+    <h2>Our Location</h2>
+    <p>Visit us at our office. We are always ready to serve you with the best solar energy solutions.</p>
+    
+    <div style="max-width: 100%; overflow:hidden; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.2);">
+      <iframe 
+        src="https://www.google.com/maps/place/Herwagana,+Gombe/@10.2850471,11.172388,16z/data=!4m6!3m5!1s0x10ffd0633893cd8f:0xcf493a04b06715a4!8m2!3d10.2859954!4d11.1744774!16s%2Fg%2F11g9fqnmx9?utm_campaign=ml-ardl&g_ep=Eg1tbF8yMDI1MDgxM18wIOC7DCoASAJQAQ%3D%3D  " 
+        width="100%" 
+        height="350" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+  
+  <!-- Contact -->
+  <section id="contact">
+  <img src="contact.jpg" style="max-width:300px; border-radius:10px;" />
+    <h2>Contact Us</h2>
+    <div class="contact-buttons">
+      <div class="contact-button">
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/2348060722263">+234 806 072 2263</a></p>
+      </div>
+      <div class="contact-button">
+        <p><strong>Email:</strong> <a href="mailto:alheripower@gmail.com">alheripower@gmail.com</a></p>
+      </div>
+      <div class="contact-button">
+        <p><strong>Phone:</strong> <a href="tel:+2348060722263">0806 072 2263</a>, <a href="tel:+2347089115958">0708 911 5958</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Alheri Power Solutions <br>
+    Providing Clean and Sustainable Energy for a Brighter Future</p>
+    
+    <a href=#home > Home </a><br>
+     <a href=#about > About Us</a><br>
+      <a href=#services > Services </a><br>
+      <a href=#contact > Contact Us </a><br>
+    
+    <p style="font-size: 0.8em;">Design By: <br> <a href="" target="_blank">CUTTING EDGE DIGITAL WORKS</a><br>
+   <a href="tel:08164469466">+234 816 446 9466 </a></p>
+  </footer>
+
+  <!-- Burger Script -->
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html>
